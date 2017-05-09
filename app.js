@@ -1,5 +1,8 @@
+// This is your master code if you use google docs only replace the ID (The long string of weird characters).
+var masterDoc = "https://docs.google.com/document/d/1S4IMSP9iukmw60jA_-YfFpbaSiWY3r-fFYJITxEk6iw/export?format=txt";
+
 $(function() {
-  $.get("https://docs.google.com/document/d/1S4IMSP9iukmw60jA_-YfFpbaSiWY3r-fFYJITxEk6iw/export?format=txt", function(data) {
+  $.get(masterDoc, function(data) {
       links = data.split(",");
       $(links.reverse()).each(function( index ) {
         var linkItem =  links[index]

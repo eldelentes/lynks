@@ -72,12 +72,13 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #000;
+  background: rgba(0,0,0,0.85);
   color: #fff;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
   height: 100vh;
+  padding: 2em;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -93,7 +94,14 @@ a {
 .rules p {
   margin: 0.4em 0;
   max-width: 42em;
-  text-anchor: center;
+  text-align: center;
+}
+
+.rules .code {
+  background: #fff;
+  color: #25192b;
+  padding: 1em;
+  border-radius: 10em;
 }
 
 .rules__author {
@@ -103,10 +111,19 @@ a {
 
 .rules__author a {
   color: #fff;
+  text-decoration: underline;
 }
 
-.rules__close {
-  background: #2e2e2e;
-  color: #fff;
+.rules__button {
   padding: 1em;
+}
+
+.rules__button.primary {
+  background: #eaebea;
+  color: #25192b;
+}
+
+.rules__button.close {
+  background: #2e2e2e;
+  color: #eaebea;
 }

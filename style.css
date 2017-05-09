@@ -132,4 +132,8 @@ a {
   .rules {
     font-size: 14px;
   }
+
+  .hide-mobile {
+    display: none;
+  }
 }

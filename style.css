@@ -127,3 +127,9 @@ a {
   background: #2e2e2e;
   color: #eaebea;
 }
+
+@media (max-width: 42em) {
+  .rules {
+    font-size: 14px;
+  }
+}

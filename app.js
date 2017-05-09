@@ -21,7 +21,8 @@ $(function() {
 if(localStorage.getItem("DontShow")) {
     $(".rules").hide();
 }
-$(document).on("click", "#okButton", function() {
-    localStorage.setItem("DontShow", "true");
-    $(".rules").hide();
+
+$(document).on("click  touchstart", "#okButton", function() {
+  localStorage.setItem("DontShow", "true");
+  $(".rules").hide();
 });
